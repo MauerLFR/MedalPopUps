@@ -1,0 +1,20 @@
+{
+	"Name": "Mau.MedalPopUps",
+	"Description": "Adds medals inspired by VALORANT's kill icon on kill/movement. Increase your satisfaction and dopamine output.",
+	"LoadPriority": 2,
+	"RequiredOnClient": false,
+	"Version": "1.0.0",
+
+	"Scripts": [
+		{
+			"Path": "MedalPops.nut",
+			"RunOn": "CLIENT",
+			"ClientCallback": {
+				"After": "MedalInit"
+			}
+		}
+
+	],
+	"ConVars": [
+	]
+}

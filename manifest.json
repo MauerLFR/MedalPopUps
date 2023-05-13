@@ -1,0 +1,9 @@
+{
+  "name": "Mau_MedalPopUps",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/MauerLFR/MedalPopUps",
+  "description": "Adds medals inspired by VALORANT's kill icon on kill/movement. Increase your satisfaction and dopamine output.",
+  "dependencies": [
+    "S2Mods-ClientKillCallback-2.0.0"
+  ]
+}
