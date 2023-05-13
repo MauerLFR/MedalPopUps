@@ -165,8 +165,9 @@ void function KillEvent(ObituaryCallbackParams KillEventPerams) {
 void
 function OnDamage(entity player, entity victim, vector Pos, int damageType) {
   if (damageType & DF_KILLSHOT) {
-    if (!victim.IsPlayer() && AiMultikill%4 == 0) {
+    if (!victim.IsPlayer() && AiMultikill > 3) {
       AddMedalEvent("%$rui/gencard_icons/dlc5/gc_icon_militia%", "%$rui/gencard_icons/dlc5/gc_icon_militia%", "", Rank[4]) 
+	  AiMultikill++
     } else {
       AiMultikill++
     }
@@ -223,7 +224,7 @@ function UpdateBadgeUI() {
     RuiSetString(BadgeSlot1, "msgText", BadgeFGCont)
 
 
-    if ((TimeNow - TimeSinceLast) > 4) {
+    if ((TimeNow - TimeSinceLast) > 5) {
       Multikill = 0
 	  AiMultikill = 0
     }
